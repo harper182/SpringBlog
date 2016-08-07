@@ -24,4 +24,19 @@ public class Setting extends BaseModel{
     @Column(name = "_value")
     private Serializable value;
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public Serializable getValue() {
+        return value;
+    }
+
+    public void setValue(Serializable value) {
+        this.value = value;
+    }
 }
